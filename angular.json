@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Mbda-Demo": {
+    "Smithy": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -36,7 +36,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/mbd-site/",
+              "baseHref": "/smithy/",
               "budgets": [
                 {
                   "type": "initial",
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Mbda-Demo:build:production"
+              "buildTarget": "Smithy:build:production"
             },
             "development": {
-              "buildTarget": "Mbda-Demo:build:development"
+              "buildTarget": "Smithy:build:development"
             }
           },
           "defaultConfiguration": "development"
